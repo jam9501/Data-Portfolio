@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ainsley Martinez</title>
+    <title>Ainsley Martinez - Data Portfolio</title>
     <style>
         body {
             font-family: Georgia, serif;
@@ -15,10 +15,11 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 20px;
+            padding: 20px;
             text-align: center;
         }
-        h1 {
+        header h1 {
+            margin: 0;
             font-size: 36px;
             font-weight: bold;
         }
@@ -58,12 +59,11 @@
             height: auto;
             border-radius: 8px;
         }
-        .projects {
-            margin-top: 20px;
-        }
-        .projects a {
-            display: block;
-            margin-bottom: 10px;
+        .photo {
+            float: right;
+            margin-left: 2in;
+            margin-bottom: 10px; /* Adjust if needed */
+            border-radius: 8px;
         }
         footer {
             text-align: center;
@@ -79,6 +79,7 @@
         <h1>Graphics and Datasets Curated Through Programming & Adobe Illustrator</h1>
     </header>
     <div class="container">
+        <img src="headshot.jpeg" alt="Headshot" class="photo">
         <p>Hi, I’m Ainsley Martinez!</p>
         <p>Thank you for the opportunity to share some of my work.</p>
         <p>Throughout high school and college, I planted myself in various newsrooms—from monthly magazines, to daily newspapers, to investigative digital platforms.</p>
@@ -103,10 +104,10 @@
             <p>I created an interactive graphic from scratch using Adobe Illustrator and D3 + JavaScript, which allows the notebook graphic to open, and animates the text. With JavaScript, I created a scrolly-telling template, which allows the reader to scroll through the story. I used Python for the analysis. I interviewed the only software developer at Amazon experiencing blindness on his experience with inaccessible tools: 
             <a href="https://jam9501.github.io/Jupyter-access/jupyter.html" target="_blank">https://jam9501.github.io/Jupyter-access/jupyter.html</a></p>
 
-            <p>I built an automated scraper for a project on comparing French news coverage from the United State’s. This automatically extracts headlines from the website every five minutes, and uploads them into a spreadsheet for me: 
+            <p>I built an automated scraper for a project on comparing French news coverage from the United States. This automatically extracts headlines from the website every five minutes, and uploads them into a spreadsheet for me: 
             <a href="https://github.com/jam9501/el-pais-autoscraper" target="_blank">https://github.com/jam9501/el-pais-autoscraper</a></p>
 
-            <p>This project is for Columbia Journalism School's LEDE program. I wanted to explore what different tie knots presidential candidates wore, and if there was a correlation between successful candidates and their choice of knot. Because data on presidential candidates and tie knot choices did not exist in a traditional format, I created my own dataset based off of archival footage and photos of presidential debates, etc. I used AI to categorize knots based on the photos. Theodore Roosevelt was the first presidential candidate to wear a traditional tie, so the data looks at candidates after 1908. I only included candidates post-primaries. I coded the bar graph in Python, then stylized it afterwards in Adobe Illustrator, and created the tie graphics using Adobe Illustrator. I animated the photos using D3 + JavaScript: 
+            <p>This project is for Columbia Journalism School's LEDE program. I wanted to explore what different tie knots presidential candidates wore, and if there was a correlation between successful candidates and their choice of knot. Because data on presidential candidates and tie knot choices did not exist in a traditional format, I created my own dataset based on archival footage and photos of presidential debates, etc. I used AI to categorize knots based on the photos. Theodore Roosevelt was the first presidential candidate to wear a traditional tie, so the data looks at candidates after 1908. I only included candidates post-primaries. I coded the bar graph in Python, then stylized it afterwards in Adobe Illustrator, and created the tie graphics using Adobe Illustrator. I animated the photos using D3 + JavaScript: 
             <a href="https://jam9501.github.io/presidential-ties/ties.html" target="_blank">https://jam9501.github.io/presidential-ties/ties.html</a></p>
         </div>
         
@@ -116,7 +117,7 @@
 
         <p>“The ability to answer and accuracy were highest for the group with the story plus infographic plus photo,” reported the journal, adding the group with the lowest ability was given the text without graphics or photos.</p>
 
-        <p>Visualizations give readers and viewers more ways to take in and learn content— improving accessibility, thus engagement.</p>
+        <p>Visualizations helped readers and viewers more ways to take in and learn content— improving accessibility, thus engagement.</p>
 
         <p>AI and programming tools, like scraping websites and building automated datasets, help reporters complete stories faster and cover more investigative content.</p>
 
