@@ -29,6 +29,12 @@ header {
 body, h1, h2, p, a {
     font-family: 'Open Sauce', sans-serif; 
 }
+@media (max-width: 768px) {
+    .my-story-img, .my-phil-img, .background-img {
+        width: 100%; /* Full width on smaller screens */
+        max-width: none; /* Remove max-width on small screens */
+    }
+}
 
 .my-story-img {
     width: 100% ;
