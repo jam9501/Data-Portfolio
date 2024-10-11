@@ -38,7 +38,7 @@ body, h1, h2, p, a {
 }
 
 .my-story-img {
-    width: 100% ;
+    width: 60% ;
     
      
 }
@@ -73,7 +73,7 @@ body, h1, h2, p, a {
     transform: scale(1.05); 
 }
 .button {
-    flex: 1; /* Allow buttons to grow equally */
+    flex: 1; 
     
 }
 
