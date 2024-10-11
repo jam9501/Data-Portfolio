@@ -56,7 +56,7 @@ body, h1, h2, p, a {
     
     display: inline-block;
     height: auto; 
-    width: 100%;
+/*     width: 100%; */
     cursor: pointer; 
     transition: transform 0.3s; 
     
