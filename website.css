@@ -1,110 +1,179 @@
-body, h1, h2, p, a {
-    font-family: 'Open Sauce', sans-serif; /* Apply Open Sauce font globally */
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    margin: 0; 
+    min-height: 100vh; 
 }
-.button-image {
-    display: inline-block; /* Ensure they are treated as block elements */
+
+li {
+    margin-bottom: 0.5in; 
+}
+
+header {
+    width: 100%; 
+}
+
+.container {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background: #fff; 
+    border-radius: 8px; 
+}
+
+
+body, h1, h2, p, a {
+    font-family: 'Open Sauce', sans-serif; 
 }
 
 .my-story-img {
-    width: 250px; /* Change this value as needed */
+    width: 100% ;
+    
+     
 }
 
 .my-phil-img {
-    width: 550px; /* Change this value as needed */
+    width: 100% ; 
 }
 
 .button-container {
-    display: flex; /* Use flexbox to align items */
-    justify-content: center; /* Center the buttons */
-    /* margin: 10px 0; Add space above and below */
+    display: flex; 
+    justify-content: center; 
+    
 }
 
 .button {
-    margin: 5px; /* Space between buttons */
+    margin: 2px; 
 }
 
 .button-image {
-    /* width: px; Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: transform 0.3s; /* Smooth hover effect */
+    
+    display: inline-block;
+    height: auto; 
+    width: 100%;
+    cursor: pointer; 
+    transition: transform 0.3s; 
+    
 }
 
 .button-image:hover {
-    transform: scale(1.05); /* Slightly scale up on hover */
+    transform: scale(1.05); 
 }
 
 .highlight {
-    padding: 0.2em 0.4em; /* Padding for the highlight */
-    border-radius: 4px;   /* Rounded corners */
-    text-decoration: none; /* No underline */
-    color: black;         /* Text color */
+    padding: 0.2em 0.4em; 
+    border-radius: 4px;   
+    text-decoration: none; 
+    color: black;         
 }
 
 .highlight a {
-    color: black;         /* Make link text black */
+    color: black;         
 }
 .yellow {
-    background-color: #e0e08e; /* Yellow background */
-    /* Optional border around the highlight */
-    display: inline-block; /* Ensures the highlight appears as a rectangle */
+    background-color: #e0e08e; 
+    
+    display: inline-block; 
 }
 .light-blue {
-    background-color: #ADD8E6; /* Light blue */
+    background-color: #ADD8E6; 
 }
 
 .light-pink {
-    background-color: #FFB6C1; /* Light pink */
+    background-color: #FFB6C1; 
 }
 
 .green {
-    background-color: #90EE90; /* Light green */
+    background-color: #90EE90; 
 }
 
 .light-red {
-    background-color: #FFCCCB; /* Light red */
+    background-color: #FFCCCB; 
 }
 
 .light-green {
-    background-color: #98FB98; /* Light green */
+    background-color: #98FB98; 
 }
 .experience-text {
-    font-family: 'Open Sauce One', sans-serif; /* Apply the font here */ 
+    font-family: 'Open Sauce One', sans-serif;  
     padding: 0.1in 15px; 
 }
 .experience-container {
     display: flex;
-    align-items: flex-start; /* Align items at the start */
+    align-items: flex-start; 
 }
 .experience-text p {
-    font-family: 'Open Sauce One', sans-serif !important; /* Force apply the font */
+    font-family: 'Open Sauce One', sans-serif !important; 
 }
 .container p {
     font-family: 'Open Sauce One', sans-serif !important ;
 }
 .container h1{
-    margin-left: 0.9in; /* Move the heading 2 inches to the right */
-    margin-top: 0;    /* No top margin */
-    margin-bottom: 20px; /* Bottom margin for spacing */
-    text-align: left;  /* Align text to the left */
+    margin-left: 0.9in; 
+    margin-top: 0;    
+    margin-bottom: 20px; 
+    text-align: left;  
     font-family: 'Open Sauce One', sans-serif !important ;
     font-size: 90px
 }
 .highlight {
-    padding: 0.2em 0.4em; /* Padding for the highlight */
-    border-radius: 4px;   /* Rounded corners */
+    padding: 0.2em 0.4em; 
+    border-radius: 4px;   
 }
 
 .highlight-list {
-    font-size: 1.2em; /* Increase font size */
-    line-height: 1.5; /* Increase line height for better spacing */
-    margin: 10px 0; /* Add margin above and below the list */
+    font-size: 1.2em; 
+    line-height: 1.5; 
+    margin: 10px 0; 
 }
 
 .highlight-list li {
-    margin-bottom: 10px; /* Space between each bullet point */
+    margin-bottom: 10px; 
 }
 h2 {
-    color: rgb(245, 0, 0); /* Set the color of h2 headers to red */
+    color: rgb(245, 0, 0); 
+}
+
+body {
+    font-family: 'Open Sauce', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+
+    
+} */
+
+
+} */
+
+
+    
+} */ */
+
+
+    
+    
+} */ */ */
+
+
+    
+} */ */ */
+
+.photo {
+    flex: 1 1 300px; 
+    max-width: 100%; 
+    height: auto; 
 }
 
