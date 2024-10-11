@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ainsley Martinez - Data Portfolio</title>
+    <link rel="stylesheet" href="website.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sauce&display=swap" rel="stylesheet"> 
+    <style>
+        
+        body {
+            font-family: 'Open Sauce', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.experience-container {
+    justify-content: space-between; 
+    display: flex;
+    align-items: flex-start; 
+    flex-direction: column; 
+    text-align: center; 
+    margin: 20px auto; /
+}
+
+.experience-text, .photo {
+    flex: 1 1 300px; 
+    margin: 10px; 
+    
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column; 
+    }
+
+    .photo {
+        margin: 0 auto; 
+    }
+}
+
+        header {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            height: 350px;
+        }
+        .container {
+         font-family: 'Open Sauce', sans-serif; 
+        }
+        .container-text {
+            margin: 20px auto;
+        }
+        h2 {
+            font-family: 'Open Sauce', sans-serif;
+            font-size: 28px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        p {
+            font-family: 'Open Sauce', sans-serif;
+            font-size: 25px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: black; 
+        }
+        a {
+            color: black; 
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .experience-container {
+            display: flex;
+            align-items: flex-start; 
+            margin-bottom: 30px;
+            width: 90%;
+            background: #fffefd;
+            margin: 20px auto; 
+        }
+        .experience-text {
+    margin-right: 20px; 
+    padding: 20px; 
+    background-color:#fffefd; 
+    border-radius: 8px; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+    font-family: 'Open Sauce', sans-serif; 
+    font-size: 25px; 
+}
+        .photo {
+            float: right;
+            margin-left: 0.3in;
+            margin-right: 0.5in;
+            margin-bottom: 10px; 
+            border-radius: 8px;
+            width: auto;
+            height: auto;
+            border: 0.5px solid white; 
+        }
+        .highlight {
+            padding: 0.2em 0.4em; 
+            border-radius: 4px;   
+            color: black;         
+        }
+        .highlight a {
+            color: black;         
+        }
+        .light-blue {
+            background-color: #ADD8E6; 
+        }
+        .light-purple {
+            background-color: #ccade6; 
+        }
+        .yellow {
+            background-color: #f4f476; 
+        }
+        .light-pink {
+            background-color: #FFB6C1; 
+        }
+        .green {
+            background-color: #90EE90; 
+        }
+        .light-red {
+            background-color: #FFCCCB; 
+        }
+        .light-green {
+            background-color: #98FB98; 
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+        .data-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fffefd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .philosophy-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fffefd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);    
+        }
+        .story-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fffefd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);      
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <video autoplay muted loop>
+            <source src="header.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </header>
+    <div class="button-container">
+        <a href="#myStory" class="button">
+            <img src="mystory.png" alt="My Story" class="button-image my-story-img">
+        </a>
+        <a href="#myExperience" class="button">
+            <img src="background.png" alt="Background" class="button-image background-img">
+        </a>
+        <a href="#myPhilosophy" class="button">
+            <img src="myphil.png" alt="My Philosophy" class="button-image my-phil-img">
+        </a>
+      
+    </div>
+    
+            
+        </div>
+        <div class="data-container">
+            <div class="data-text">
+        <h2>Data Projects</h2>
+        <h1>Map of Gas Leak Distribution in New York City</h1>
+        <div class="projects">
+            <p>I created this map displaying gas leaks in New York City using QGIS, a geographic information system software. The interactive web version below has a tooltip implemented, where the user can hover over a neighborhood and the labels appear. I analyzed U.S. data, and found New York City has the highest rates of gas leaks in the country. Then, I analyzed the Fire Department of New York City's data, and found the Bronx had some of the highest rates of gas leaks within the city. Additionally, Morrisania had more gas leaks than 68% of all New York City neighborhoods. This could be a larger taxpayer story, with new scholarly research suggesting New Yorkers could be paying more than $77 million annually in gas leak repairs.</p>
+            <div class="image-container">
+                <iframe 
+                    src="Gas_Leaks_QGIS/index2.html">
+                </iframe>
+            </div>
+            <h1>Mouse Accessibility for People With Motor Disabilities</h1>
+            <p>This is a prototype game interactive that mimics the experience of people with motor disabilities using a mouse, with a research analysis. The left side is a "control" of sorts, assuming the user does not have a motor disability. I coded the right side to illustrate how difficult it is for someone with a motor disability to complete a dragging movement using a traditional mouse. I used Python, a coding software, for the data analysis and D3 + JavaScript for the game: 
+              <p><strong>Note:</strong> You might need to refresh the page if time ran out on the right side.</p>
+                <div class="image-container">
+                    <iframe 
+                        src="https://jam9501.github.io/mouse-and-disabilities/mouse.html">
+                    </iframe>
+                </div>
+            <h1>New York State Senate Data Extraction + Artificial Intelligence Categorization</h1>
+            <p>I scraped and extracted the data from the New York State Senate website (https://www.nysenate.gov/legislation) for all bills passed in 2023, using Selenium—a coding library. Then, I used an OpenAI library, ChatGBT, with Python to code a function for categorizing bills by topic. The spreadsheet and coding notebook are available: 
+                <p>
+                    <span class="highlight yellow">
+                        <a href="https://github.com/jam9501/NY-bills-scraper-ai/tree/main" target="_blank">
+                            https://github.com/jam9501/NY-bills-scraper-ai/tree/main
+                        </a>
+                    </span>
+                </p>
+                           <h1>Data Science Notebook Accessibility graphic, story, and analysis</h1>
+            <p>I created an interactive graphic from scratch using Adobe Illustrator and D3 + JavaScript, which allows the notebook graphic to open with a click, and animates the text. With JavaScript, I created a scrolly-telling template, which allows the reader to scroll through the story. I used Python for the analysis. I interviewed the only software developer at Amazon experiencing blindness on his experience with inaccessible tools: 
+                <div class="image-container">
+                    <iframe 
+                        src="https://jam9501.github.io/Jupyter-access/jupyter.html">
+                    </iframe>
+                </div>
+                <h1>Automated Headline Extraction</h1>
+            <p>I built an automated scraper for a project on comparing Spanish news coverage from the United States. This automatically extracts headlines from the website every five minutes, and uploads them into a spreadsheet for me: 
+                <p>
+                    <span class="highlight yellow">
+                        <a href="https://github.com/jam9501/el-pais-autoscraper/blob/main/headlines.csv" target="_blank">
+                            https://github.com/jam9501/el-pais-autoscraper/blob/main/headlines.csv
+                        </a>
+                    </span>
+                </p>
+                <h1> Sample Clip of Observational Documentary on Anti-immigration Bills and Latinos in Politics </h1>
+        <p> Before starting Columbia's program, I directed an observational documentary on anti-immigration bills in Oklahoma, filming Latino politicians
+            while the legislation unfolded. I used some clips from the documentary for a mapping project:</p>
+            <p><span class="highlight yellow">
+                <a href="https://www.dropbox.com/scl/fi/ao4t80kkrwy9ag1hiau20/Sequence-02.mov?rlkey=53dtbm1toyupp8mih4n729fzk&e=3&st=hqiaxoih&dl=0" target="_blank">
+                    Dropbox Link
+                </a></span></p>
+        </div>
+                 <h1>Investigative Story on County Jails in Oklahoma</h1>
+           <div class="image-container">
+            <iframe 
+                src="https://oklahomawatch.org/2023/07/12/most-oklahoma-jails-failed-health-department-inspections-in-2022/">
+            </iframe>
+        </div>
+        <div id= "myExperience" class="experience-container">
+            <div class="experience-text">
+                <h1> 2023-2024: </h1>
+                <p> I completed the <span class="highlight light-purple"><a href=https://ledeprogram.com/" target="_blank">LEDE program</a></span>,  at Columbia’s Journalism School. </p>
+                <p> I received a bachelor’s degree from the University of Central Oklahoma, and studied <span class="highlight light-purple"><a href=”https://www.uco.edu/programs/cla/mass-comm/pro-media" target="_blank"> Professional Media</a></span>.  </p>
+                <p>
+                    I investigated Oklahoma county jails, and wrote other long form pieces at 
+                    <span class="highlight light-blue"><a href="https://oklahomawatch.org/author/amartinez/" target="_blank">Oklahoma Watch</a></span>.
+                </p>
+                <p>
+                    I received the 
+                      <span class="highlight green"><a href="https://okjournalismhalloffame.com/news/ainsley-martinez-2022-recipient-of-the-oklahoma-press-association-award-for-outstanding-promise-in-journalism/" target="_blank">Oklahoma Journalism Hall of Fame</a></span> 
+                      award for “Outstanding Promise in Journalism” as editor of <span class="highlight light-blue"><a href="https://ucentralmedia.com/author/jmartinez/page/4/" target="_blank">The Vista</a></span>;
+          
+                  </p>
+                  <p>
+                  and, an
+                      <span class="highlight green"><a href="https://ucentralmedia.com/the-vista-wins-multiple-awards-at-ocmas/" target="_blank">Oklahoma Collegiate Media</a></span> 
+                      investigative reporting award for my reporting on 
+                      <span class="highlight light-blue"><a href="https://ucentralmedia.com/uco-under-pressure/" target="_blank">fiscal miscalculations</a></span> at UCO.
+                  </p>
+                  <p> I served on the executive board of the <span class="highlight light-red"><a href="https://soonersuccess.ouhsc.edu/Services-Programs/Supporting-Minorities-with-Disabilities-Coalition" target="_blank">Supporting Minorities With Disabilities Coalition</a></span>. </p>
+<p> I received the Milton R. Reynold’s Most Professionally Advanced Student award. </p 
+<div class = "experience-container">
+
+ 
+               <h1> 2022: </h1> 
+               <p>
+                    <p> I collaborated with <span class="highlight light-green"><a href="https://www.cpr.org/author/joe-wertz/" target="_blank">Colorado Public Radio data editor</a></span>Joe Wertz on the Database Journalism course at the University of Central Oklahoma. </p>
+                    <p>I reported breaking news and wrote daily stories for 
+                    <span class="highlight yellow"><a href="https://www.oklahoman.com/staff/7468502001/ainsley-martinez/" target="_blank">The Oklahoman</a></span>.
+                </p>
+                <p>I served as:</p>
+<ul>
+    <li>
+        The president of the 
+        <span class="highlight light-red">
+            <a href="https://www.uco.edu/programs/cla/minors/pre-law" target="_blank">Pre-Law Society</a>
+        </span>
+    </li>
+    <li>
+        The editor-in-chief of 
+        <span class="highlight light-blue">
+            <a href="https://ucentralmedia.com/author/jmartinez/page/2/" target="_blank">The Vista</a>
+        </span>
+    </li>
+    <li>
+        The public relations chair of 
+        <span class="highlight light-red">
+            <a href="https://ucore.uco.edu/hasa/home/" target="_blank">Hispanic American Student Association</a>
+        </span>
+    </li>
+    <li>
+        The public relations chair of 
+        <span class="highlight light-red">
+            <a href="https://www.uco.edu/students/involvement/leadership/" target="_blank">President’s Leadership Council</a>
+        </span>
+    </li>
+</ul>
+<h1> 2020: </h1>
+<p>
+    I started creating social media posts and curated engagement for clients at 
+    <span class="highlight light-red"><a href="https://www.johndavidwest.com/jdwest" target="_blank">John David West NYC</a></span>.
+</p>
+<h1> 2019:</h1>
+<p>I served on the 
+    <span class="highlight light-green"><a href="https://wjmc.gmu.edu/ainsley-martinez/" target="_blank">Youth Advisory Board</a></span> 
+    for the Washington Journalism and Media Conference, and was a member of the 
+    <span class="highlight light-green"><a href="https://www.oidj.org/martinez/" target="_blank">Oklahoma Institute for Diversity in Journalism</a></span>.
+</p>
+<h1> 2018: </h1>
+                <p>
+                    I interviewed artists and critiqued pop culture for 
+                    <span class="highlight light-pink"><a href="https://issuu.com/poptized/docs/issuefour" target="_blank">Poptized Magazine</a></span>.
+                </p>
+                <p>
+                    I was an editor of the 
+                    <span class="highlight yellow"><a href="https://www.normantranscript.com/edmond/ruff-draft-staffs-bring-home-all-oklahoman-at-osm/article_ee4f79b0-1430-5691-b9ce-bca52954305e.html" target="_blank">Ruff Draft</a></span>, my high school newspaper.
+                </p>
+                
+
+            </div>
+        
+        <div id="myPhilosophy" class="philosophy-container">
+            <div class="philosophy-text">
+                <h2> My journalistic philosophy</h2>
+                <p>
+                    My philosophy for reporting is simple: apply the artistry of storytelling to complex fiscal and political ideas. For a journalistic body to reach homeostasis, reporters must find a way to demystify important issues without patronizing readers or viewers.
+                </p>
+                <p>
+                    Democratizing data— putting information directly in consumer’s hands— is a vital step to restoring balance in the press, and combating the spread of misinformation.
+                </p>
+                <p>And, fostering data and visualization initiatives in newsrooms lead to more engagement and efficient reporting.</p>
+                <p>
+                    Graphics, photos, and visualizations stimulate active learning and help readers digest material, according to Jeffrey L. Griffin and 
+                    Robert L. Stevenson’s <span class="highlight yellow">
+                        <a href="https://www.tandfonline.com/doi/pdf/10.1080/15551399609363328" target="_blank">research</a>
+</span>.
+                </p>
+<p>“The ability to answer and accuracy were highest for the group with the story plus infographic plus photo,” reported the journal, adding the group with the lowest accuracy received the text without graphics or photos.
+</p>
+<p>Visualizations provide readers and viewers more ways to interpret content—improving accessibility, thus engagement.
+    AI and programming tools, like scraping websites and building automated datasets, help reporters complete stories faster and cover more investigative content.
+    </p>
+                <p>
+                    We need to build trust in communities through multi-layered representation— diverse reporters and sources— and digestible data.
+                </p>
+                <p>
+                    <p>Researchers know:</p>
+                    <ul class="highlight-list">
+                        <li>
+                            <span class="highlight yellow"><strong>
+                                <a href="https://www.nielsen.com/insights/2021/inclusion-information-and-intersection/?utm_campaign=Diversity_Equity_Inclusion&utm_content=DIS_Latino&utm_id=NLSN_10_01_2021&utm_source=twitter&utm_medium=Organic_Social/" target="_blank">
+                                    Latinos are 28% more likely to see content flagged as biased, conspiracy or pseudoscience.
+                                </a>
+                            </strong></span>
+                        </li>
+                        <li>
+                            <span class="highlight yellow"><strong>
+                                <a href="https://www.pewresearch.org/short-reads/2023/10/31/how-black-americans-engage-with-local-news/" target="_blank">
+                                   58% of Black Americans say that news coverage of the Black community is too negative.
+                                </a>
+                            </strong></span>
+                        </li>
+                        <li>
+                            <span class="highlight yellow"><strong>
+                                <a href="https://www.nielsen.com/insights/2022/the-importance-of-disability-representation/#:~:text=Representation%20for%20people%20living%20with,of%20people%20with%20visible%20disabilities." target="_blank">
+                                    People with disabilities are represented as sources 1% of the time.
+                                </a>
+                            </strong></span>
+                        </li>
+                        <li>
+                            <span class="highlight yellow"><strong>
+                                <a href="https://www.cjr.org/news_literacy/teen_digital_literacy_divide.php" target="_blank">
+                                    Lower-income individuals tend to be less confident in finding credible information
+                                </a>
+                            </strong></span>
+                        </li>
+                    </ul>
+                    
+                <p>
+                    Scholars, academics and journalists alike know the problems plaguing the industry—and democracy— but it’s time to develop straightforward solutions. <strong>Let’s talk about it.</strong>
+                </p>
+            </div>
+        </div>
+        <div id="myStory" class="story-container">
+            <div class="story-text">
+                <h2> My story </h2> 
+                <p>
+                    Growing up, I imagined my first cries not as a defining moment of birth—but one where I pleaded for my whole body back.
+                </p>
+                <p>
+                    As a young girl who had a stroke in the womb, my limited abilities often dictated my interests. I had adolescent dreams of becoming a surgeon or firefighter, but I always found a needle prodding my back of doubt and incurable incompetence.
+                </p>
+                <p>
+                    But, at five-years-old, I sat at a desk, in a tiny plastic chair I couldn’t fit into now, and wrote, “The dog chased the cat.” It wasn’t the sentence heard around the world, but in my own microcosm, the orbit shifted to a whole new trajectory.
+                </p>
+                <p>
+                    As a child, my instinctual malleability of syntax supplemented the natural physical abilities I lacked. My first story, “We Never Had a Library,” introduced a group of children who wanted to read, but never learned how—and followed their journey of building a library for their town. I felt the act of writing grow out of my body like another limb: an extension of myself.
+                </p>
+                <p>
+                    I ran to my elementary school’s librarian to ask if she could publish it. She likely thought the request was cute and decided to humor me, but I’m grateful she did. When I put the laminated label on my book, and placed it on the correct shelf using the Dewey Decimal System, I dropped the notion of dreams, and found my calling.
+                </p>
+                <p>
+                    It’s funny, looking back on its subtle themes of media accessibility. Though I hadn’t grasped the concept yet, I knew people needed resources to educate themselves. Since then, I’ve witnessed intellect act as a vital function for survival. Everyone needs truth to gain power over their own lives.
+                </p>
+                <p>
+                    At eleven-years-old, my plan evolved. Reality interested me far more than fiction ever could, so I decided to be a journalist.
+                </p>
+                <p>
+                    In early high school, this solidified at The Newseum when I saw, “There are three people who run towards danger and not away: Police, firemen, and reporters.” I read the dreams I wanted as a child, and a calling that encompassed them all.
+                </p>
+            </div>
+        </div>
+        
+        
+    <footer>
+        &copy; 2023 Ainsley Martinez
+    </footer>
+</body>
+</html>
