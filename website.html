@@ -20,7 +20,10 @@
     max-width: 1200px; 
     margin: 0 auto;
 }
-
+my-story-img {
+    width: 120px; 
+    height: auto; 
+}
 .experience-container {
     justify-content: space-between; 
     display: flex;
@@ -173,15 +176,13 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);      
         }
+        .italic-text {
+    font-style: italic;
+}
     </style>
 </head>
 <body>
-    <header>
-        <video autoplay muted loop>
-            <source src="header.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </header>
+
     <div class="button-container">
         <a href="#myStory" class="button">
             <img src="mystory.png" alt="My Story" class="button-image my-story-img">
@@ -199,23 +200,60 @@
         </div>
         <div class="data-container">
             <div class="data-text">
-        <h2>Data Projects</h2>
-        <h1>Map of Gas Leak Distribution in New York City</h1>
-        <div class="projects">
-            <p>I created this map displaying gas leaks in New York City using QGIS, a geographic information system software. The interactive web version below has a tooltip implemented, where the user can hover over a neighborhood and the labels appear. I analyzed U.S. data, and found New York City has the highest rates of gas leaks in the country. Then, I analyzed the Fire Department of New York City's data, and found the Bronx had some of the highest rates of gas leaks within the city. Additionally, Morrisania had more gas leaks than 68% of all New York City neighborhoods. This could be a larger taxpayer story, with new scholarly research suggesting New Yorkers could be paying more than $77 million annually in gas leak repairs.</p>
+                <h2>
+                    Ainsley Martinez: <span class="italic-text">reporting, videography, data visualizations and marketing</span>
+                  </h2>
+
+        <h1>Tariff Data Visualization + Analysis Tool</h1>
+            <p>I used Python to analyze the U.S. International Trade Commission’s 2025 tariff database and built an interactive map using Adobe Illustrator, JavaScript, and D3.js. The Long Island Herald’s CMS doesn't support backend embedding, so the map lives here:</p>
             <div class="image-container">
                 <iframe 
-                    src="Gas_Leaks_QGIS/index2.html">
+                  src="https://jam9501.github.io/tariff-li/"
+                  width="100%" 
+                  height="500" 
+                  style="border:none;">
                 </iframe>
+              <p><span class="highlight yellow">
+                <a href="https://jam9501.github.io/tariff-li/" target="_blank">
+                    External Link to Story
+                </a></span></p>
             </div>
-            <h1>Mouse Accessibility for People With Motor Disabilities</h1>
-            <p>This is a prototype game interactive that mimics the experience of people with motor disabilities using a mouse, with a research analysis. The left side is a "control" of sorts, assuming the user does not have a motor disability. I coded the right side to illustrate how difficult it is for someone with a motor disability to complete a dragging movement using a traditional mouse. I used Python, a coding software, for the data analysis and D3 + JavaScript for the game: 
-              <p><strong>Note:</strong> You might need to refresh the page if time ran out on the right side.</p>
-                <div class="image-container">
-                    <iframe 
-                        src="https://jam9501.github.io/mouse-and-disabilities/mouse.html">
-                    </iframe>
-                </div>
+            
+            <h1>How New Yorkers Get Their News (Street Interview Video)</h1>
+            <p>I created a TikTok-style video by interviewing New Yorkers on the street and in cafés, asking how they get their news. I filmed using a Sony a7 and edited the video with Adobe Illustrator.</p>
+            <div class="image-container">
+    
+              <p><span class="highlight yellow">
+                <a href="https://www.tiktok.com/embed/v2/7286899819198047520" target="_blank">
+                    External Link to TikTok
+                </a></span></p>
+              
+            </div>
+            
+            <h1>Redfin Housing Affordability Analysis</h1>
+            <p>I scraped housing listings from Redfin across 28 Long Island towns, cities, villages, and hamlets to analyze affordability in real time. Of the 1,052 listings, only 0.76% were affordable under standard income-to-housing ratios. I calculated affordability using U.S. Census income data and flagged each town’s median price.</p>
+            <div class="image-container">
+              <iframe 
+                src="https://www.liherald.com/stories/long-island-housing-can-you-afford-to-live-here,216838"
+                width="100%" 
+                height="500" 
+                style="border:none;">
+              </iframe>
+              <p><span class="highlight yellow">
+                <a href="https://www.liherald.com/stories/long-island-housing-can-you-afford-to-live-here,216838" target="_blank">
+                    External Link to Story
+                </a></span></p>
+            </div>
+            
+            <h1>Marketing Post for Parsons School of Design</h1>
+            <p>As a Marketing Specialist with John David West NYC, I helped edit and post a branded reel for Parsons School of Design using Adobe Illustrator.</p>
+            <div class="image-container">
+    
+              <p><span class="highlight yellow">
+                <a href="https://www.instagram.com/reel/CWEovFDgZ0B/embed" target="_blank">
+                    External Link to Instagram
+                </a></span></p>
+            </div>
             <h1>New York State Senate Data Extraction + Artificial Intelligence Categorization</h1>
             <p>I scraped and extracted the data from the New York State Senate website (https://www.nysenate.gov/legislation) for all bills passed in 2023, using Selenium—a coding library. Then, I used an OpenAI library, ChatGBT, with Python to code a function for categorizing bills by topic. The spreadsheet and coding notebook are available: 
                 <p>
@@ -225,35 +263,60 @@
                         </a>
                     </span>
                 </p>
+                <h1>Automated Headline Extraction</h1>
+                <p>I built an automated scraper for a project on comparing Spanish news coverage from the United States. This automatically extracts headlines from the website every five minutes, and uploads them into a spreadsheet for me: 
+                    <p>
+                        <span class="highlight yellow">
+                            <a href="https://github.com/jam9501/el-pais-autoscraper/blob/main/headlines.csv" target="_blank">
+                                https://github.com/jam9501/el-pais-autoscraper/blob/main/headlines.csv
+                            </a>
+                        </span>
+                    </p>
+                    <h1> Sample Clip of Observational Documentary on Anti-immigration Bills and Latinos in Politics </h1>
+            <p> Before starting Columbia's program, I directed an observational documentary on anti-immigration bills in Oklahoma, filming Latino politicians
+                while the legislation unfolded. I used some clips from the documentary for a mapping project:</p>
+                <p><span class="highlight yellow">
+                    <a href="https://www.dropbox.com/scl/fi/ao4t80kkrwy9ag1hiau20/Sequence-02.mov?rlkey=53dtbm1toyupp8mih4n729fzk&e=3&st=hqiaxoih&dl=0" target="_blank">
+                        Dropbox Link
+                    </a></span></p>
+            </div>
+            <h1>Mouse Accessibility for People With Motor Disabilities</h1>
+            <p>This is a prototype game interactive that mimics the experience of people with motor disabilities using a mouse, with a research analysis. The left side is a "control" of sorts, assuming the user does not have a motor disability. I coded the right side to illustrate how difficult it is for someone with a motor disability to complete a dragging movement using a traditional mouse. I used Python, a coding software, for the data analysis and D3 + JavaScript for the game: 
+              <p><strong>Note:</strong> You might need to refresh the page if time ran out on the right side.</p>
+                <div class="image-container">
+                    <iframe 
+                        src="https://jam9501.github.io/mouse-and-disabilities/mouse.html">
+                    </iframe>
+                </div>
+            
                            <h1>Data Science Notebook Accessibility graphic, story, and analysis</h1>
             <p>I created an interactive graphic from scratch using Adobe Illustrator and D3 + JavaScript, which allows the notebook graphic to open with a click, and animates the text. With JavaScript, I created a scrolly-telling template, which allows the reader to scroll through the story. I used Python for the analysis. I interviewed the only software developer at Amazon experiencing blindness on his experience with inaccessible tools: 
+                
                 <div class="image-container">
                     <iframe 
                         src="https://jam9501.github.io/Jupyter-access/jupyter.html">
                     </iframe>
+                    <p><span class="highlight yellow">
+                        <a href="https://jam9501.github.io/Jupyter-access/jupyter.html" target="_blank">
+                            External Link
+                        </a></span></p>
                 </div>
-                <h1>Automated Headline Extraction</h1>
-            <p>I built an automated scraper for a project on comparing Spanish news coverage from the United States. This automatically extracts headlines from the website every five minutes, and uploads them into a spreadsheet for me: 
-                <p>
-                    <span class="highlight yellow">
-                        <a href="https://github.com/jam9501/el-pais-autoscraper/blob/main/headlines.csv" target="_blank">
-                            https://github.com/jam9501/el-pais-autoscraper/blob/main/headlines.csv
-                        </a>
-                    </span>
-                </p>
-                <h1> Sample Clip of Observational Documentary on Anti-immigration Bills and Latinos in Politics </h1>
-        <p> Before starting Columbia's program, I directed an observational documentary on anti-immigration bills in Oklahoma, filming Latino politicians
-            while the legislation unfolded. I used some clips from the documentary for a mapping project:</p>
-            <p><span class="highlight yellow">
-                <a href="https://www.dropbox.com/scl/fi/ao4t80kkrwy9ag1hiau20/Sequence-02.mov?rlkey=53dtbm1toyupp8mih4n729fzk&e=3&st=hqiaxoih&dl=0" target="_blank">
-                    Dropbox Link
-                </a></span></p>
-        </div>
+               
                  <h1>Investigative Story on County Jails in Oklahoma</h1>
            <div class="image-container">
             <iframe 
                 src="https://oklahomawatch.org/2023/07/12/most-oklahoma-jails-failed-health-department-inspections-in-2022/">
             </iframe>
+            
+        <h1>Map of Gas Leak Distribution in New York City</h1>
+        <div class="projects">
+            <p>I created this map displaying gas leaks in New York City using QGIS, a geographic information system software. The interactive web version below has a tooltip implemented, where the user can hover over a neighborhood and the labels appear. I analyzed U.S. data, and found New York City has the highest rates of gas leaks in the country. Then, I analyzed the Fire Department of New York City's data, and found the Bronx had some of the highest rates of gas leaks within the city. Additionally, Morrisania had more gas leaks than 68% of all New York City neighborhoods. This could be a larger taxpayer story, with new scholarly research suggesting New Yorkers could be paying more than $77 million annually in gas leak repairs.</p>
+            <div class="image-container">
+                <iframe 
+                    src="Gas_Leaks_QGIS/index2.html">
+                </iframe>
+            </div>
+          
         </div>
         <div id= "myExperience" class="experience-container">
             <div class="experience-text">
@@ -432,7 +495,7 @@
         
         
     <footer>
-        &copy; 2023 Ainsley Martinez
+        &copy; 2025 Ainsley Martinez
     </footer>
 </body>
 </html>
